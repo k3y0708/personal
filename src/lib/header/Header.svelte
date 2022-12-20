@@ -1,6 +1,23 @@
 <script>
   import { onMount } from 'svelte';
 
+  function toggleMenu() {
+    const menu = document.getElementsByClassName('bottom-menu')[0];
+    if (menu.classList.contains('bottom-menu-hidden')) {
+      menu.classList.remove('bottom-menu-hidden');
+    } else {
+      menu.classList.add('bottom-menu-hidden');
+    }
+  }
+
+  /**
+   * @param {string} activeElement - The id of the active element
+   */
+  function mobileSetActive(activeElement) {
+    toggleMenu();
+    setActive(activeElement);
+  }
+
   /**
    * @param {string} activeElement - The id of the active element
    */
@@ -43,7 +60,13 @@
     <div id="others" class="header-tile">Anderes</div>
   </a>
   <a href="https://docs.atashfaraz.de" target="_blank" rel="noreferrer">
-    <div id="others" class="header-tile">Docs</div>
+    <div id="others" class="header-tile">
+      Docs
+      <svg width="24" height="24" viewBox="0 0 24 24" class="newtab">
+        <path
+          d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+      </svg>
+    </div>
   </a>
 </header>
 <div id="header-placeholder" />
@@ -51,8 +74,29 @@
 <span style="display: none;" class="selected" />
 <!-- This is a hack to include the selected style -->
 
+<div class="bottom-menu bottom-menu-hidden">
+  <a href="/" on:click={() => mobileSetActive('personal')}>
+    <div id="personal">Keyvan Atashfaraz</div>
+  </a>
+  <a href="/tools" on:click={() => mobileSetActive('tools')}>
+    <div id="tools">Tools</div>
+  </a>
+  <a href="/others" on:click={() => mobileSetActive('others')}>
+    <div id="others">Anderes</div>
+  </a>
+  <a href="https://docs.atashfaraz.de" target="_blank" rel="noreferrer">
+    <div id="others">
+      Docs
+      <svg width="24" height="24" viewBox="0 0 24 24" class="newtab">
+        <path
+          d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+      </svg>
+    </div>
+  </a>
+</div>
 <navbar>
-  <div>
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <div on:click={toggleMenu}>
     <svg height="0.75em" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect y="80" width="200" height="20" fill="#fff" />
       <rect y="40" width="200" height="20" fill="#fff" />
@@ -123,6 +167,15 @@
     text-decoration: none;
   }
 
+  .bottom-menu {
+    display: none;
+  }
+
+  svg.newtab {
+    fill: #fff;
+    width: 0.5em;
+  }
+
   @media only screen and (max-width: 768px) {
     header {
       justify-content: center;
@@ -142,6 +195,24 @@
 
     .selected {
       text-decoration: none;
+    }
+
+    .bottom-menu {
+      display: block;
+      position: fixed;
+      bottom: 1.5em;
+      width: 100%;
+      background-color: #00adb5;
+      text-align: center;
+      padding: 0.25em;
+      font-size: 1.5em;
+      cursor: pointer;
+      height: 6em;
+      transition: 0.5s;
+    }
+
+    .bottom-menu-hidden {
+      height: 0;
     }
   }
 </style>
