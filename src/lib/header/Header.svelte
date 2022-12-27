@@ -56,17 +56,17 @@
   <a href="/tools" on:click={() => setActive('tools')}>
     <div id="tools" class="header-tile">Tools</div>
   </a>
-  <a href="/others" on:click={() => setActive('others')}>
-    <div id="others" class="header-tile">Anderes</div>
-  </a>
   <a href="https://docs.atashfaraz.de" target="_blank" rel="noreferrer">
-    <div id="others" class="header-tile">
+    <div id="docs" class="header-tile">
       Docs
       <svg width="24" height="24" viewBox="0 0 24 24" class="newtab">
         <path
           d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
       </svg>
     </div>
+  </a>
+  <a href="/others" on:click={() => setActive('others')}>
+    <div id="others" class="header-tile">Anderes</div>
   </a>
 </header>
 <div id="header-placeholder" />
@@ -81,9 +81,6 @@
   <a href="/tools" on:click={() => mobileSetActive('tools')}>
     <div id="tools">Tools</div>
   </a>
-  <a href="/others" on:click={() => mobileSetActive('others')}>
-    <div id="others">Anderes</div>
-  </a>
   <a href="https://docs.atashfaraz.de" target="_blank" rel="noreferrer">
     <div id="others">
       Docs
@@ -92,6 +89,9 @@
           d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
       </svg>
     </div>
+  </a>
+  <a href="/others" on:click={() => mobileSetActive('others')}>
+    <div id="others">Anderes</div>
   </a>
 </div>
 <navbar>

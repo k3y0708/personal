@@ -4,7 +4,6 @@
   import Header from '$lib/header/Header.svelte';
   import { webVitals } from '$lib/vitals';
   import '../app.css';
-
   let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
 
   $: if (browser && analyticsId) {
@@ -21,9 +20,3 @@
 <main>
   <slot />
 </main>
-
-<style>
-  main {
-    margin: 1rem;
-  }
-</style>
