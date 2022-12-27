@@ -4,8 +4,9 @@
 </script>
 
 <svelte:head>
-  <title>Tools</title>
-  <meta name="description" content="Svelte demo app" />
+  <title>Tools | Keyvan Atashfaraz</title>
+  <meta name="author" content="Keyvan Atashfaraz" />
+  <meta name="description" content="Tools loved by Keyvan" />
 </svelte:head>
 
 <ToolSection title="FrontEnd Design">

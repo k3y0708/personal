@@ -39,11 +39,10 @@
     if (path === '/tools') {
       return 'tools';
     }
-    if (path === '/others') {
-      return 'others';
+    if (path === '/other') {
+      return 'other';
     }
-    alert('Invalid path: ' + path);
-    return 'personal';
+    return '';
   }
 
   onMount(() => setActive(getActive(window.location.pathname)));
@@ -65,8 +64,8 @@
       </svg>
     </div>
   </a>
-  <a href="/others" on:click={() => setActive('others')}>
-    <div id="others" class="header-tile">Others</div>
+  <a href="/other" on:click={() => setActive('other')}>
+    <div id="other" class="header-tile">Other</div>
   </a>
 </header>
 <div id="header-placeholder" />
@@ -82,7 +81,7 @@
     <div id="tools">Tools</div>
   </a>
   <a href="https://docs.atashfaraz.de" target="_blank" rel="noreferrer">
-    <div id="others">
+    <div id="other">
       Docs
       <svg width="24" height="24" viewBox="0 0 24 24" class="newtab">
         <path
@@ -90,8 +89,8 @@
       </svg>
     </div>
   </a>
-  <a href="/others" on:click={() => mobileSetActive('others')}>
-    <div id="others">Others</div>
+  <a href="/other" on:click={() => mobileSetActive('other')}>
+    <div id="other">Other</div>
   </a>
 </div>
 <navbar>

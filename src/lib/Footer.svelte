@@ -24,15 +24,11 @@
     rel="noreferrer"
     class="fa fa-reddit" />
   <a
-    href="https://t.snapchat.com/iucDxUOH"
-    target="_blank"
-    rel="noreferrer"
-    class="fa fa-snapchat-ghost" />
-  <a
     href="https://www.xing.com/profile/Keyvan_Atashfaraz"
     target="_blank"
     rel="noreferrer"
     class="fa fa-xing" />
+  <a href="mailto:keyvan@atashfaraz.de" class="fa fa-envelope" />
 </footer>
 
 <style>
@@ -60,12 +56,6 @@
     color: white;
   }
 
-  .fa-snapchat-ghost {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-
   .fa-reddit {
     background: #ff5700;
     color: white;
@@ -77,6 +67,11 @@
   }
 
   .fa-github {
+    background: #333;
+    color: white;
+  }
+
+  .fa-envelope {
     background: #333;
     color: white;
   }
