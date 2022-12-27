@@ -6,10 +6,14 @@
 
   /**@type {string}*/
   export let level;
+
+  export let icon = 'unset';
 </script>
 
 <div>
-  <h3>{name}</h3>
+  <h3>
+    {name}{#if icon !== 'unset'}<img src={'/skills/' + icon} alt={'Logo of ' + name} />{/if}
+  </h3>
   {#each Array.from({ length: level }, (_, i) => i) as _, i}<svg
       class="star-colored"
       width="1em"
@@ -40,6 +44,11 @@
 
   h3 {
     margin: 0;
+  }
+
+  img {
+    height: 1em;
+    margin-left: 0.5em;
   }
 
   @media only screen and (min-width: 600px) {

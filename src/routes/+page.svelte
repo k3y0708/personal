@@ -20,24 +20,24 @@
 <section>
   <h1>Skills</h1>
   <SkillSection name="Infrastructure">
-    <SkillCard name="TerraForm" level="10" />
-    <SkillCard name="Kubernetes" level="9" />
+    <SkillCard name="Terraform" level="10" icon="terraform.png" />
+    <SkillCard name="Kubernetes" level="9" icon="kubernetes.svg" />
   </SkillSection>
   <SkillSection name="Programming Languages">
-    <SkillCard name="Java" level="10" />
-    <SkillCard name="Bash" level="9" />
-    <SkillCard name="Go" level="7" />
-    <SkillCard name="JavaScript" level="8" />
-    <SkillCard name="TypeScript" level="7" />
-    <SkillCard name="PHP" level="5" />
+    <SkillCard name="Java" level="10" icon="java.png" />
+    <SkillCard name="Bash" level="9" icon="bash.png" />
+    <SkillCard name="Go" level="7" icon="golang.svg" />
+    <SkillCard name="JavaScript" level="8" icon="javascript.png" />
+    <SkillCard name="TypeScript" level="7" icon="typescript.svg" />
+    <SkillCard name="PHP" level="5" icon="php.png" />
     <SkillCard name="CSS/SCSS/LESS" level="8" />
-    <SkillCard name="Python" level="6" />
-    <SkillCard name="Haskell" level="5" />
-    <SkillCard name="C/C++" level="4" />
+    <SkillCard name="Python" level="6" icon="python.png" />
+    <SkillCard name="Haskell" level="5" icon="haskell.png" />
+    <SkillCard name="C/C++" level="4" icon="c.png" />
   </SkillSection>
   <SkillSection name="Markup Languages">
-    <SkillCard name="HTML" level="10" />
-    <SkillCard name="Markdown" level="10" />
+    <SkillCard name="HTML" level="10" icon="html.svg" />
+    <SkillCard name="Markdown" level="10" icon="markdown.svg" />
   </SkillSection>
   <SkillSection name="Frameworks" />
 </section>
