@@ -66,7 +66,7 @@
     </div>
   </a>
   <a href="/others" on:click={() => setActive('others')}>
-    <div id="others" class="header-tile">Anderes</div>
+    <div id="others" class="header-tile">Others</div>
   </a>
 </header>
 <div id="header-placeholder" />
@@ -91,7 +91,7 @@
     </div>
   </a>
   <a href="/others" on:click={() => mobileSetActive('others')}>
-    <div id="others">Anderes</div>
+    <div id="others">Others</div>
   </a>
 </div>
 <navbar>

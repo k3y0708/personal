@@ -3,15 +3,15 @@
   export let backgroundColor = 'transparent';
 </script>
 
-<div style={'background-color: ' + backgroundColor + ';'}>
+<section style={'background-color: ' + backgroundColor + ';'}>
   <h1>{title}</h1>
-  <div class="sectionBody">
+  <div>
     <slot />
   </div>
-</div>
+</section>
 
 <style>
-  .sectionBody {
+  div {
     display: flex;
     flex-wrap: wrap;
   }
