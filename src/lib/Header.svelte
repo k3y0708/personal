@@ -168,6 +168,7 @@
 
   .bottom-menu {
     display: none;
+    z-index: 20;
   }
 
   svg.newtab {
