@@ -39,7 +39,12 @@
     <SkillCard name="HTML" level="10" icon="html.svg" />
     <SkillCard name="Markdown" level="10" icon="markdown.svg" />
   </SkillSection>
-  <SkillSection name="Frameworks" />
+  <SkillSection name="Frameworks & Libaries">
+    <SkillCard name="Svelte/SvelteKit" level="7" icon="svelte.svg" />
+    <SkillCard name="Hugo" level="8" icon="hugo.svg" />
+    <SkillCard name="Spring/SpringBoot" level="9" icon="spring.svg" />
+    <SkillCard name="VueJs/NuxtJs" level="5" icon="vue.svg" />
+  </SkillSection>
 </section>
 <section>
   <h1>Projects</h1>

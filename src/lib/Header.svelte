@@ -213,6 +213,7 @@
 
     .bottom-menu-hidden {
       height: 0;
+      padding: 0;
     }
   }
 </style>

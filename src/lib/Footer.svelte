@@ -11,24 +11,33 @@
 
 <!-- svelte-ignore a11y-missing-content -->
 <footer>
-  <a href="https://github.com/k3y0708" target="_blank" rel="noreferrer" class="fa fa-github" />
-  <a
-    href="https://www.instagram.com/k3y0708/"
-    target="_blank"
-    rel="noreferrer"
-    class="fa fa-instagram" />
-  <a href="#" target="_blank" class="fa fa-linkedin" />
-  <a
-    href="https://www.reddit.com/user/k3y0708/"
-    target="_blank"
-    rel="noreferrer"
-    class="fa fa-reddit" />
-  <a
-    href="https://www.xing.com/profile/Keyvan_Atashfaraz"
-    target="_blank"
-    rel="noreferrer"
-    class="fa fa-xing" />
-  <a href="mailto:keyvan@atashfaraz.de" class="fa fa-envelope" />
+  <section>
+    <a href="https://github.com/k3y0708" target="_blank" rel="noreferrer" class="fa fa-github" />
+    <a
+      href="https://www.instagram.com/k3y0708/"
+      target="_blank"
+      rel="noreferrer"
+      class="fa fa-instagram" />
+    <a
+      href="https://www.linkedin.com/in/keyvan-atashfaraz"
+      target="_blank"
+      rel="noreferrer"
+      class="fa fa-linkedin" />
+    <a
+      href="https://www.reddit.com/user/k3y0708/"
+      target="_blank"
+      rel="noreferrer"
+      class="fa fa-reddit" />
+    <a
+      href="https://www.xing.com/profile/Keyvan_Atashfaraz"
+      target="_blank"
+      rel="noreferrer"
+      class="fa fa-xing" />
+    <a href="mailto:keyvan@atashfaraz.de" class="fa fa-envelope" />
+  </section>
+  <section>
+    <a href="/privacy">Datenschutz</a>
+  </section>
 </footer>
 
 <style>
@@ -84,6 +93,11 @@
     position: fixed;
     bottom: 0;
     width: calc(100% - 2em);
+  }
+
+  a {
+    color: #666;
+    text-decoration: none;
   }
 
   @media (max-width: 768px) {
