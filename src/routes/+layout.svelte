@@ -24,6 +24,11 @@
 
 <div id="navbar-placeholder-mobile" />
 <Footer />
+<noscript>
+  <p>
+    <img src="//analytics.atashfaraz.de/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" />
+  </p>
+</noscript>
 
 <style>
   #navbar-placeholder-mobile {
