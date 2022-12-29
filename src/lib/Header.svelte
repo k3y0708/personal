@@ -78,6 +78,10 @@
     justify-content: center;
   }
 
+  header a {
+    height: 1fr;
+  }
+
   header,
   navbar {
     background-color: #00adb5;
@@ -114,6 +118,10 @@
   .header-tile {
     width: 25vw;
     text-align: center;
+    height: calc(100% - 0.5em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   a,
