@@ -22,6 +22,10 @@
   <SkillSection name="Infrastructure">
     <SkillCard name="Terraform" level="10" icon="terraform.png" />
     <SkillCard name="Kubernetes" level="9" icon="kubernetes.svg" />
+    <SkillCard name="Docker" level="9" icon="docker.webp" />
+    <SkillCard name="Ansible" level="8" icon="ansible.png" />
+    <SkillCard name="Azure" level="8" icon="azure.png" />
+    <SkillCard name="Hetzner Cloud" level="8" icon="hetzner.png" />
   </SkillSection>
   <SkillSection name="Programming Languages">
     <SkillCard name="Java" level="10" icon="java.png" />
@@ -44,6 +48,35 @@
     <SkillCard name="Hugo" level="8" icon="hugo.svg" />
     <SkillCard name="Spring/SpringBoot" level="9" icon="spring.svg" />
     <SkillCard name="VueJs/NuxtJs" level="5" icon="vue.svg" />
+    <SkillCard name="React" level="3" icon="react.svg" />
+    <SkillCard name="NodeJs" level="8" icon="nodejs.svg" />
+    <SkillCard name="ExpressJs" level="7" icon="expressjs.png" />
+  </SkillSection>
+  <SkillSection name="CI/CD">
+    <SkillCard name="GitLab CI" level="10" icon="gitlab.svg" />
+    <SkillCard name="GitHub Actions" level="2" icon="githubActions.png" />
+    <SkillCard name="Jenkins" level="4" icon="jenkins.svg" />
+    <SkillCard name="Azure Pipelines" level="2" icon="azurePipelines.png" />
+    <SkillCard name="ArgoCD" level="4" icon="argocd.png" />
+  </SkillSection>
+  <SkillSection name="Databases">
+    <SkillCard name="SQL" level="8" />
+    <SkillCard name="MySQL" level="8" icon="mysql.png" />
+    <SkillCard name="MariaDB" level="8" icon="mariadb.svg" />
+  </SkillSection>
+  <SkillSection name="Operating Systems">
+    <SkillCard name="Linux" level="9" icon="linux.png" />
+    <SkillCard name="Windows" level="9" icon="windows.png" />
+    <SkillCard name="MacOS" level="9" icon="macos.svg" />
+  </SkillSection>
+  <SkillSection name="Tools">
+    <SkillCard name="IntelliJ" level="10" icon="intellij.svg" />
+    <SkillCard name="Visual Studio Code" level="10" icon="vscode.svg" />
+    <SkillCard name="Postman" level="8" icon="postman.png" />
+    <SkillCard name="Docker Desktop" level="9" icon="docker.webp" />
+    <SkillCard name="Kubectl" level="9" icon="kubernetes.svg" />
+    <!--SkillCard name="Helm" level="8" icon="helm.png" />
+    <SkillCard name="K9s" level="8" icon="k9s.png" /-->
   </SkillSection>
 </section>
 <section>
