@@ -1,49 +1,6 @@
 <script>
+  import { getActive, mobileSetActive, setActive, toggleMenu } from '$lib/navbar';
   import { onMount } from 'svelte';
-
-  function toggleMenu() {
-    const menu = document.getElementsByClassName('bottom-menu')[0];
-    if (menu.classList.contains('bottom-menu-hidden')) {
-      menu.classList.remove('bottom-menu-hidden');
-    } else {
-      menu.classList.add('bottom-menu-hidden');
-    }
-  }
-
-  /**
-   * @param {string} activeElement - The id of the active element
-   */
-  function mobileSetActive(activeElement) {
-    toggleMenu();
-    setActive(activeElement);
-  }
-
-  /**
-   * @param {string} activeElement - The id of the active element
-   */
-  function setActive(activeElement) {
-    const headerTiles = document.getElementsByClassName('header-tile');
-    for (let i = 0; i < headerTiles.length; i++) {
-      headerTiles[i].classList.remove('selected');
-    }
-    document.getElementById(activeElement)?.classList.add('selected');
-  }
-
-  /**
-   * @param {string} path
-   */
-  function getActive(path) {
-    if (path === '/') {
-      return 'personal';
-    }
-    if (path === '/tools') {
-      return 'tools';
-    }
-    if (path === '/other') {
-      return 'other';
-    }
-    return '';
-  }
 
   onMount(() => setActive(getActive(window.location.pathname)));
 </script>

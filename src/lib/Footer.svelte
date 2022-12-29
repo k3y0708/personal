@@ -1,4 +1,5 @@
 <script>
+  import { setActive } from '$lib/navbar';
   import { onMount } from 'svelte';
 
   onMount(() => {
@@ -36,7 +37,7 @@
     <a href="mailto:keyvan@atashfaraz.de" class="fa fa-envelope" />
   </section>
   <section>
-    <a href="/privacy">Datenschutz</a>
+    <a href="/privacy" on:click={() => setActive('none')}>Privacy</a>
   </section>
 </footer>
 
