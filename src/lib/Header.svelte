@@ -3,6 +3,13 @@
   import { onMount } from 'svelte';
 
   onMount(() => setActive(getActive(window.location.pathname)));
+
+  window.onresize = () => {
+    // @ts-ignore
+    document.getElementById('header-placeholder').style.height =
+      // @ts-ignore
+      document.querySelector('header').offsetHeight + 'px';
+  };
 </script>
 
 <header>
