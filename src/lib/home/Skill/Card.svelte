@@ -12,7 +12,7 @@
 
 <div>
   <h3>
-    {name}{#if icon !== 'unset'}<img src={'/skills/' + icon} alt={'Logo of ' + name} />{/if}
+    {#if icon !== 'unset'}<img src={'/skills/' + icon} alt={'Logo of ' + name} />{/if}{name}
   </h3>
   {#each Array.from({ length: level }, (_, i) => i) as _, i}<svg
       class="star-colored"
@@ -48,7 +48,7 @@
 
   img {
     height: 1em;
-    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
 
   @media only screen and (min-width: 600px) {

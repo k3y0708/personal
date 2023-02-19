@@ -28,6 +28,36 @@
   <ToolElement description="Decode a JWT" link="https://jwt.io/" img="jwt.png">JWT</ToolElement>
 </ToolSection>
 
+<ToolSection title="AI">
+  <ToolElement
+    description="An AI which communicates over a chat"
+    link="https://chat.openai.com/"
+    img="chatgpt.jpg">
+    ChatGPT
+  </ToolElement>
+  <ToolElement
+    description="An AI which creates cooking recipes"
+    link="http://chefgpt.xyz/"
+    img="chefgpt.webp">
+    ChefGPT
+  </ToolElement>
+</ToolSection>
+
+<ToolSection title="Business Generators">
+  <ToolElement
+    description="Generate a business logo"
+    link="https://brandmark.io/"
+    img="brandmark.png">
+    Brandmark
+  </ToolElement>
+  <ToolElement
+    description="Generate a business name"
+    link="https://namelix.com/app/"
+    img="namelix.jpg">
+    NameLix
+  </ToolElement>
+</ToolSection>
+
 <ToolSection>
   <ToolElement
     description="Create a custom profile picture"

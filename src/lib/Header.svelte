@@ -2,14 +2,15 @@
   import { getActive, mobileSetActive, setActive, toggleMenu } from '$lib/navbar';
   import { onMount } from 'svelte';
 
-  onMount(() => setActive(getActive(window.location.pathname)));
-
-  window.onresize = () => {
-    // @ts-ignore
-    document.getElementById('header-placeholder').style.height =
+  onMount(() => {
+    setActive(getActive(window.location.pathname));
+    window.onresize = () => {
       // @ts-ignore
-      document.querySelector('header').offsetHeight + 'px';
-  };
+      document.getElementById('header-placeholder').style.height =
+        // @ts-ignore
+        document.querySelector('header').offsetHeight + 'px';
+    };
+  });
 </script>
 
 <header>
