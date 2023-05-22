@@ -1,19 +1,9 @@
 <script>
   /** @type {string}*/
   export let name;
-
-  function toggleHeight() {
-    const section = document.getElementById('skillsection' + name.replace(' ', ''));
-    if (section?.classList.contains('hidden')) {
-      section.classList.remove('hidden');
-    } else {
-      section?.classList.add('hidden');
-    }
-  }
 </script>
 
-<h3 on:click={toggleHeight}>{name}</h3>
-<!-- svelte-ignore a11y-click-events-have-key-events -->
+<h3>{name}</h3>
 <div id={'skillsection' + name.replace(' ', '')}>
   <slot />
 </div>
@@ -24,12 +14,6 @@
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    transition: max-height 0.7s;
-    max-height: 20rem;
-  }
-
-  .hidden {
-    max-height: 0px;
   }
 
   h3 {
